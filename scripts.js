@@ -159,7 +159,7 @@ function chercherEtudiants() {
 }
 
 function demanderPosition(prenom, nom, numero, idTableau) {
-    let position = prompt(`À quelle position veux-tu ajouter ${prenom} ${nom} ? (1 pour début, laisser vide pour le mettre à la fin)`);
+    let position = prompt(`À quelle position veux-tu ajouter ${prenom} ${nom} ? (1 pour début)`);
     position = position ? parseInt(position) - 1 : null;
     ajouterAuTableau(prenom, nom, numero, idTableau, position);
 }
