@@ -1,3 +1,6 @@
+import { inject } from '@vercel/analytics';
+inject();
+
 let etudiants = [];
 
 async function chargerEtudiants() {
