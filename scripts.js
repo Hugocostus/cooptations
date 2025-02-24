@@ -46,7 +46,7 @@ function genererExcel() {
     XLSX.utils.book_append_sheet(wb, ws_secondaire, "Liste Secondaire");
 
     // Sauvegarde du fichier avec le nom de l'asso
-    let fileName = `Liste_${groupeChoisi}.xlsx`;
+    let fileName = `${groupeChoisi}.xlsx`;
     XLSX.writeFile(wb, fileName);
 }
 
