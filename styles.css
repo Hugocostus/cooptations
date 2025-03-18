@@ -32,7 +32,7 @@ body {
 
 /* 📌 Logo */
 .logo-img {
-    width: 175px;
+    width: 130px;
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
