@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooptations-assos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- En-tête : 2 éléments (rhum à gauche, logo au centre) -->
+    <div class="header">
+        <!-- Colonne 1 : Rhum en haut à gauche -->
+        <div class="rhum-container">
+            <a href="index.html" class="rhum-link">
+                <img src="rhum.png" alt="Guide d'utilisation" class="rhum-logo">
+            </a>
+        </div>
+
+        <!-- Colonne 2 : Logo au centre -->
+        <div class="logo-container">
+            <a href="guide.html" class="logo-link">
+                <img src="Logo.png" alt="Retour à l'accueil" class="logo-img">
+            </a>
+        </div>
+        <!-- Colonne 3 (vide) est implicite dans la grille (voir CSS) -->
+    </div>
+
+    <!-- Sélecteur de groupe, champs, tableaux... -->
+    <div id="idchoix"></div>
+
+    <h2>Rechercher un étudiant</h2>
+    <input type="text" id="search" onkeyup="chercherEtudiants()" placeholder="Tape un nom, prénom, numéro...">
+    <div id="resultats"></div>
+
+    <h2>Définir le nombre de lignes</h2>
+    <div class="input-container">
+        <label for="nombreListePrinc">Nombre liste princ. :</label>
+        <input type="number" id="nombreListePrinc" min="1" value="0" onchange="mettreAJourTableaux()">
+
+        <label for="nombreListeSec">Nombre liste sec. :</label>
+        <input type="number" id="nombreListeSec" min="1" value="0" onchange="mettreAJourTableaux()">
+    </div>
+
+    <h2>Liste Principale</h2>
+    <table border="1">
+        <tbody id="tableau_principal"></tbody>
+    </table>
+
+    <h2>Liste Secondaire</h2>
+    <table border="1">
+        <tbody id="tableau_secondaire"></tbody>
+    </table>
+
+    <button onclick="exporterTableau()">Exporter sous Excel</button>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
