@@ -1,0 +1,101 @@
+/* --- Header : grille à 3 colonnes pour placer rhum à gauche, logo au centre, colonne vide à droite --- */
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Col. gauche, col. centrale, col. droite */
+    align-items: center;                  /* Aligne verticalement sur la même ligne */
+    justify-items: center;               /* Centre le contenu dans chaque colonne */
+    width: 100%;
+    margin-top: 10px;                    /* Ajustez l'espace au-dessus si nécessaire */
+    text-align: left;                    /* Évite le centrage global du body */
+}
+
+/* --- Bouteille (rhum) à gauche --- */
+.rhum-container {
+    grid-column: 1;         /* Place la bouteille dans la 1re colonne */
+    justify-self: start;    /* La colle à gauche */
+    margin-left: 10px;      /* Optionnel : petit espace avec le bord */
+}
+
+.rhum-link {
+    display: inline-block;
+}
+
+.rhum-logo {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.rhum-logo:hover {
+    transform: scale(1.1);
+}
+
+/* --- Logo au centre --- */
+.logo-container {
+    grid-column: 2;         /* 2e colonne (au milieu) */
+    justify-self: center;   /* Centre horizontalement dans la colonne */
+}
+
+.logo-link {
+    display: inline-block;
+}
+
+.logo-img {
+    width: 175px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
+/* --- Fond général et texte --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fond noir */
+    color: #fff;            /* Texte blanc */
+    margin: 0;
+    padding: 0;
+    text-align: center;     /* Centre le contenu inline par défaut */
+}
+
+/* --- Conteneur principal pour le guide --- */
+.content-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 10px;
+    text-align: left; /* Aligne le texte du guide à gauche */
+}
+
+/* --- Titres et paragraphes --- */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* --- Liste --- */
+ul {
+    margin-left: 20px;
+}
+
+li {
+    color: #fff;
+    margin-bottom: 10px;
+}
