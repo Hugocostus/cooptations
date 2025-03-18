@@ -99,3 +99,23 @@ li {
     color: #fff;
     margin-bottom: 10px;
 }
+
+.poursuivre-container {
+    text-align: center;    /* Centre le bouton */
+    margin: 20px 0;        /* Espace au-dessus et en dessous */
+}
+
+.poursuivre-container button {
+    background-color: #fff; /* Fond blanc */
+    color: #000;            /* Texte noir */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.poursuivre-container button:hover {
+    background-color: #ccc; /* Gris clair au survol */
+}
