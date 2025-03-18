@@ -95,9 +95,35 @@ function creerSelectionGroupe() {
         <div class="select-container">
             <label for="groupeChoisi">Sélectionnez un groupe :</label>
             <select id="groupeChoisi"> 
+                <option value="Astuce">Astuce</option> 
                 <option value="BDA">BDA</option> 
-                <option value="BDE">BDE</option> 
+                <option value="BDE">BDE</option>
                 <option value="BDI">BDI</option> 
+                <option value="BDS">BDS</option> 
+                <option value="BDX">BDX</option> 
+                <option value="Cheer'up">Cheer'up</option> 
+                <option value="Club voile">Club voile</option> 
+                <option value="Declic">Declic</option> 
+                <option value="Diplo">Diplo</option> 
+                <option value="Dress code">Dress code</option> 
+                <option value="Focus">Focus</option> 
+                <option value="Forum">Forum</option> 
+                <option value="Gourmets">Gourmets</option> 
+                <option value="Libr'air">Libr'air</option> 
+                <option value="Lux'em">Lux'em</option> 
+                <option value="PnP">PnP</option> 
+                <option value="PP">PP</option> 
+                <option value="Noise">Noise</option> 
+                <option value="Racing">Racing</option> 
+                <option value="Radio">Radio</option> 
+                <option value="Raid">Raid</option> 
+                <option value="Ski club">Ski club</option> 
+                <option value="Soli">Soli</option>
+                <option value="SDC">SDC</option>
+                <option value="Transac">Transac</option>
+                <option value="Verbat'em">Verbat'em</option> 
+                
+                
             </select>
         </div>
     `;
